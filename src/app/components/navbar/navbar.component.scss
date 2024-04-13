@@ -1,0 +1,22 @@
+.title {
+    margin-left: 16px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .sidenav-container {
+    height: 100%;
+  }
+  
+  .mat-sidenav {
+    width: 250px;
+  }
+  
+  @media (max-width: 768px) {
+    .mat-sidenav {
+      width: 200px;
+    }
+  }
+  

@@ -1,0 +1,83 @@
+@import "../../assets/styles/grid.scss";
+
+:host {
+  position: relative;
+  // left: 50px;
+
+  .row {
+    .myDiv1 {
+      background-color: red;
+    }
+    .myDiv2 {
+      background-color: yellow;
+    }
+    .myDiv3 {
+      background-color: blue;
+    }
+    .myDiv4 {
+      background-color: green;
+    }
+    .myDiv5 {
+      background-color: brown;
+    }
+    .myDiv6 {
+      background-color: grey;
+    }
+    .myDiv7 {
+      background-color: purple;
+    }
+  }
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center
+}
+
+.nav-button {
+  margin-left: 12px;
+}
+
+.nav-button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 12px 0;
+  
+  position: relative;
+  overflow:hidden;
+  animation: mymove2 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  from {height: 0px;}
+  to {height: 230px;}
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-button-container {
+    width: 100%;
+  }
+  .nav-button {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .nav-button-container {
+    animation: mymove 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes mymove2 {
+  from {height: 0px;}
+  to {height: 65px;}
+}
+
